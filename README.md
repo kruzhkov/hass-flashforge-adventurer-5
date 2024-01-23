@@ -1,6 +1,6 @@
 # FlashForge Adventurer 5m/5m Pro for Home Assistant
 
-A custom Home Assistant integration for the FlashForge Adventurer 3 printer.
+A custom Home Assistant integration for the FlashForge Adventurer 5m / 5m Pro printer.
 
 It adds three entities:
 
@@ -22,8 +22,6 @@ address in your router settings.
 
 ## Printer compatibility
 
-I own the Adventurer 3 printer at the moment, so that's the model which is 100%
-supported. There are reports of other users trying this integration with other
 FlashForge printers:
 
 | Printer | Notes |
