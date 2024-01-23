@@ -1,0 +1,12 @@
+{
+  "domain": "flashforge_adventurer_5",
+  "name": "FlashForge Adventurer 5",
+  "codeowners": ["@kruzhkov"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/kruzhkov/hass-flashforge-adventurer-5/",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/kruzhkov/hass-flashforge-adventurer-5/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
