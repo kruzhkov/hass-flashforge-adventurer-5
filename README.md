@@ -8,7 +8,7 @@ It adds three entities:
 - current print job's progress
 - camera feed
 
-<img src="https://raw.githubusercontent.com/modrzew/hass-flashforge-adventurer-3/master/example.png" alt="Example dashboard" width="800"/>
+<img src="https://raw.githubusercontent.com/kruzhkov/hass-flashforge-adventurer-5/main/example.png" alt="Example dashboard" width="800"/>
 
 ## Installation
 
