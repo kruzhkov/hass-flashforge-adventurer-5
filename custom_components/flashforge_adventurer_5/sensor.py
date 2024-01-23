@@ -79,7 +79,7 @@ class FlashforgeAdventurer5CommonPropertiesMixin:
 
     @property
     def unique_id(self) -> str:
-        return f"flashforge_adventurer_3_{self.ip}"
+        return f"flashforge_adventurer_5_{self.ip}"
 
 
 class BaseFlashforgeAdventurer5Sensor(
@@ -115,7 +115,7 @@ class BaseFlashforgeAdventurer5Sensor(
 class FlashforgeAdventurer5ProgressSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"Progress"
+        return f"{super().name} Progress"
 
     @property
     def unique_id(self) -> str:
@@ -141,7 +141,7 @@ class FlashforgeAdventurer5ProgressSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5TempNozzleSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"Nozzle"
+        return f"{super().name} Nozzle"
 
     @property
     def unique_id(self) -> str:
@@ -167,7 +167,7 @@ class FlashforgeAdventurer5TempNozzleSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5TempDesiredNozzleSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"Nozzle desired"
+        return f"{super().name} Nozzle desired"
 
     @property
     def unique_id(self) -> str:
@@ -193,7 +193,7 @@ class FlashforgeAdventurer5TempDesiredNozzleSensor(BaseFlashforgeAdventurer5Sens
 class FlashforgeAdventurer5TempBedSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"Bed"
+        return f"{super().name} Bed"
 
     @property
     def unique_id(self) -> str:
@@ -219,7 +219,7 @@ class FlashforgeAdventurer5TempBedSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5TempDesiredBedSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"Bed desired"
+        return f"{super().name} Bed desired"
 
     @property
     def unique_id(self) -> str:
@@ -245,7 +245,7 @@ class FlashforgeAdventurer5TempDesiredBedSensor(BaseFlashforgeAdventurer5Sensor)
 class FlashforgeAdventurer5MachineStatusSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"Machine status"
+        return f"{super().name} Machine status"
 
     @property
     def unique_id(self) -> str:
@@ -267,7 +267,7 @@ class FlashforgeAdventurer5MachineStatusSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5MoveModeSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"Move mode"
+        return f"{super().name} Move mode"
 
     @property
     def unique_id(self) -> str:
@@ -289,7 +289,7 @@ class FlashforgeAdventurer5MoveModeSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5CurrentFileSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"Current file"
+        return f"{super().name} Current file"
 
     @property
     def unique_id(self) -> str:
@@ -311,7 +311,7 @@ class FlashforgeAdventurer5CurrentFileSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5LayerSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"Layer"
+        return f"{super().name} Layer"
 
     @property
     def unique_id(self) -> str:
