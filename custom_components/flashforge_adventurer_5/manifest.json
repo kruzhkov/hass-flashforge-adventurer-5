@@ -5,8 +5,8 @@
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/kruzhkov/hass-flashforge-adventurer-5/",
-  "iot_class": "cloud_polling",
+  "iot_class": "local_polling",
   "issue_tracker": "https://github.com/kruzhkov/hass-flashforge-adventurer-5/issues",
   "requirements": [],
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

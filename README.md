@@ -2,6 +2,12 @@
 
 A custom Home Assistant integration for the FlashForge Adventurer 5m / 5m Pro printer.
 
+New features in version 1.0.1:
+After the update, you need to recreate the integration record
+
+- add device name setting
+- names of the entities are based on the device name
+
 It adds three entities:
 
 - state, together with nozzle and bed temperatures available as attributes

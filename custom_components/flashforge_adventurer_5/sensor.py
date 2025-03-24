@@ -66,6 +66,7 @@ class FlashforgeAdventurer5Coordinator(DataUpdateCoordinator):
         )
         self.ip = printer_definition["ip_address"]
         self.port = printer_definition["port"]
+        self.name_dev = printer_definition["name"]
 
     async def _async_update_data(self):
         async with async_timeout.timeout(5):
@@ -91,6 +92,7 @@ class BaseFlashforgeAdventurer5Sensor(
         super().__init__(coordinator)
         self.ip = printer_definition["ip_address"]
         self.port = printer_definition["port"]
+        self.name_dev = printer_definition["name"]
         self._available = False
         self.attrs = {}
 
@@ -115,11 +117,11 @@ class BaseFlashforgeAdventurer5Sensor(
 class FlashforgeAdventurer5ProgressSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"{super().name} Progress"
+        return f"{self.name_dev} Progress"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_progress"
+        return f"{self.name_dev}_progress"
 
     @property
     def available(self) -> bool:
@@ -141,11 +143,11 @@ class FlashforgeAdventurer5ProgressSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5TempNozzleSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"{super().name} Nozzle"
+        return f"{self.name_dev} Nozzle"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_tempnozzle"
+        return f"{self.name_dev}_tempnozzle"
 
     @property
     def available(self) -> bool:
@@ -167,11 +169,11 @@ class FlashforgeAdventurer5TempNozzleSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5TempDesiredNozzleSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"{super().name} Nozzle desired"
+        return f"{self.name_dev} Nozzle desired"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_tempnozzledesired"
+        return f"{self.name_dev}_tempnozzledesired"
 
     @property
     def available(self) -> bool:
@@ -193,11 +195,11 @@ class FlashforgeAdventurer5TempDesiredNozzleSensor(BaseFlashforgeAdventurer5Sens
 class FlashforgeAdventurer5TempBedSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"{super().name} Bed"
+        return f"{self.name_dev} Bed"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_tempbed"
+        return f"{self.name_dev}_tempbed"
 
     @property
     def available(self) -> bool:
@@ -219,11 +221,11 @@ class FlashforgeAdventurer5TempBedSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5TempDesiredBedSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"{super().name} Bed desired"
+        return f"{self.name_dev} Bed desired"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_tempbeddesired"
+        return f"{self.name_dev}_tempbeddesired"
 
     @property
     def available(self) -> bool:
@@ -245,11 +247,11 @@ class FlashforgeAdventurer5TempDesiredBedSensor(BaseFlashforgeAdventurer5Sensor)
 class FlashforgeAdventurer5MachineStatusSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"{super().name} Machine status"
+        return f"{self.name_dev} Machine status"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_machine_status"
+        return f"{self.name_dev}_machine_status"
 
     @property
     def available(self) -> bool:
@@ -267,11 +269,11 @@ class FlashforgeAdventurer5MachineStatusSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5MoveModeSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"{super().name} Move mode"
+        return f"{self.name_dev} Move mode"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_move_mode"
+        return f"{self.name_dev}_move_mode"
 
     @property
     def available(self) -> bool:
@@ -289,11 +291,11 @@ class FlashforgeAdventurer5MoveModeSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5CurrentFileSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"{super().name} Current file"
+        return f"{self.name_dev} Current file"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_current_file"
+        return f"{self.name_dev}_current_file"
 
     @property
     def available(self) -> bool:
@@ -311,11 +313,11 @@ class FlashforgeAdventurer5CurrentFileSensor(BaseFlashforgeAdventurer5Sensor):
 class FlashforgeAdventurer5LayerSensor(BaseFlashforgeAdventurer5Sensor):
     @property
     def name(self) -> str:
-        return f"{super().name} Layer"
+        return f"{self.name_dev} Layer"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_layer"
+        return f"{self.name_dev}_layer"
 
     @property
     def available(self) -> bool:

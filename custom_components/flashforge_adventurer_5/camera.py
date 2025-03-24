@@ -35,17 +35,18 @@ class FlashforgeAdventurer5Camera(
     def __init__(self, printer_definition: PrinterDefinition) -> None:
         self.ip = printer_definition["ip_address"]
         self.port = printer_definition["port"]
+        self.name_dev = printer_definition["name"]
         super().__init__(
             name=self.name, mjpeg_url=self.stream_url, still_image_url=None
         )
 
     @property
     def name(self) -> str:
-        return f"{super().name} camera"
+        return f"{self.name_dev} camera"
 
     @property
     def unique_id(self) -> str:
-        return f"{super().unique_id}_camera"
+        return f"{self.name_dev}_camera"
 
     @property
     def stream_url(self) -> str:
