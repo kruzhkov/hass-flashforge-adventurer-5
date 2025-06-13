@@ -16,10 +16,7 @@ async def async_setup_entry(
 
     # Forward the setup to the sensor and camera platforms.
     hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(entry, 'sensor')
-    )
-    hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(entry, 'camera')
+        hass.config_entries.async_forward_entry_setups(entry, ['sensor','camera'])
     )
     return True
 
