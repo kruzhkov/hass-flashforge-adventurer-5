@@ -1,5 +1,13 @@
 # FlashForge Adventurer 5m/5m Pro for Home Assistant
 
+# ⛔️ DEPRECATED/UNMAINTAINED
+
+> ⚠️ **Этот проект больше не поддерживается.**
+>
+> Разработка перенесена в **[flashforge_3d](https://github.com/kruzhkov/flashforge_3d.git)**.
+>
+> Пожалуйста, используйте новую версию.
+
 A custom Home Assistant integration for the FlashForge Adventurer 5m / 5m Pro printer.
 
 New features in version 1.0.1:
